@@ -1,0 +1,41 @@
+@import './breakpoints';
+@import './colors';
+@import './typography';
+.card {
+  width: 100%;
+  display: block;
+  font-size: 12px;
+}
+.card-head{
+		padding: 0;
+		margin: 0;
+		box-shadow: 0 10px 20px 0 rgba(black, 0.25);
+    list-style: none;
+    cursor: pointer;
+  }
+		.card-list {
+			list-style: none;
+			position: relative;
+			font-size: 16px;
+			font-weight: bold;
+			transition: 0.5s ease;
+			cursor: pointer;
+			user-select: none;
+      padding: 5px 10px;
+      background-color: #EEEEEE;
+    }
+.cancel{
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+@media screen and (min-width: $laptop) {
+  width: 48%;
+}
+
+@media screen and (min-width: $large-desktop) {
+  width: 31.3333%;
+}

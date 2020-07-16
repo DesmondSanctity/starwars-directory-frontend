@@ -1,0 +1,110 @@
+@import './breakpoints';
+@import "./colors";
+$header-font: 'Lato', sans-serif;
+$body-font-size: 16px;
+
+
+body {
+  font-family: $header-font;
+  background-color: lighten($highlight-color, 10%);
+
+}
+a {
+  text-decoration: none;
+  color: $highlight-color;
+
+  &:hover {
+    color: darken($highlight-color, 10%);
+  }
+}
+.navbar-expand{
+  height:70px;
+
+}
+.btn-style{
+  font-size: $body-font-size;
+  cursor: pointer;
+  $color: black;
+  color: $color;
+  background-color: $body-bg;
+
+  .btn-style:hover {
+    background-color: blue;
+  }
+  .btn-style:active {
+    box-shadow: none;
+  }
+}
+
+.card-columns{
+  justify-content: center;
+  .card {
+
+      -webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+}
+
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+/* Media queries for card */
+
+.tagline{
+  margin-top: 100px;
+  text-align: center;
+
+}
+@media only screen and (min-width : 411px) and (max-width : 780px)
+{
+  .btn-style{
+    font-size: $body-font-size;
+    cursor: pointer;
+    $color: black;
+    color: $color;
+    background-color: $body-bg;
+    .btn-style:hover {
+      background-color: blue;
+    }
+    .btn-style:active {
+      box-shadow: none;
+    }
+    button.btn-style btn btn-primary{
+      color: #fff;
+      background-color: #007bff;
+    }
+  }
+}

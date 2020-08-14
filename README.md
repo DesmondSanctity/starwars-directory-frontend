@@ -10,9 +10,9 @@ Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### staging area
-Click Here for a [demo] (https://mystarwar.herokuapp.com)
+Click Here for a [demo] (https://starwars-api-frontend.netlify.app/)
 ## production build
-DEMO (https://mystarwar.herokuapp.com)
+[DEMO] (https://starwars-api-frontend.netlify.app/)
 
 Used the following stack:
 - React
